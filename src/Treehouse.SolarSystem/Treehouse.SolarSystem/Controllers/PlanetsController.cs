@@ -9,12 +9,14 @@ namespace Treehouse.SolarSystem.Controllers
 {
     public class PlanetsController : Controller
     {
+        private bool _disposed = false;
+        private Context _context = null;
         private Repository _repository = null;
 
         public PlanetsController()
         {
-            var context = new Context();
-            _repository = new Repository(context);
+            _context = new Context();
+            _repository = new Repository(_context);
         }
 
         public ActionResult Index()
@@ -22,6 +24,21 @@ namespace Treehouse.SolarSystem.Controllers
             var planets = _repository.GetPlanets();
 
             return View(planets);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (_disposed)
+                return;
+
+            if (disposing)
+            {
+                _context.Dispose();
+            }
+
+            _disposed = true;
+
+            base.Dispose(disposing);
         }
     }
 }
