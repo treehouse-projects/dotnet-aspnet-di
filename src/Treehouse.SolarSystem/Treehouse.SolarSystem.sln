@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Treehouse.SolarSystem", "Treehouse.SolarSystem\Treehouse.SolarSystem.csproj", "{5A6BD080-6408-44E1-9921-7098A17E0300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Treehouse.AspNetCore", "Treehouse.AspNetCore\Treehouse.AspNetCore.csproj", "{7649B806-D579-45B7-8AF6-46B6295B7D0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{5A6BD080-6408-44E1-9921-7098A17E0300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A6BD080-6408-44E1-9921-7098A17E0300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A6BD080-6408-44E1-9921-7098A17E0300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7649B806-D579-45B7-8AF6-46B6295B7D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7649B806-D579-45B7-8AF6-46B6295B7D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7649B806-D579-45B7-8AF6-46B6295B7D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7649B806-D579-45B7-8AF6-46B6295B7D0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ADF0C8F-0061-4136-9D1B-A8DE67A14059}
 	EndGlobalSection
 EndGlobal
