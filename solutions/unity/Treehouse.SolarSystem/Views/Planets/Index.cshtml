@@ -1,0 +1,14 @@
+﻿@model System.Collections.Generic.List<Treehouse.SolarSystem.Models.Planet>
+
+@{
+    ViewBag.Title = "Planets";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<ul>
+    @foreach (var planet in Model)
+    {
+        <li>@planet.Name (Diameter: @planet.Diameter.ToString("n0") km)</li>
+    }
+</ul>
